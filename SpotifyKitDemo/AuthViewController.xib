@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AuthViewController" customModule="SpotifyKitDemo" customModuleProvider="target">
+            <connections>
+                <outlet property="connectButton" destination="qGC-mk-yPg" id="uGO-se-veW"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Spotify_Icon" translatesAutoresizingMaskIntoConstraints="NO" id="Nbp-c7-Us1">
+                    <rect key="frame" x="87" y="146" width="240" height="240"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="240" id="HTe-EV-zFu"/>
+                        <constraint firstAttribute="width" constant="240" id="Hca-cb-bmq"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qGC-mk-yPg">
+                    <rect key="frame" x="107" y="488" width="200" height="50"/>
+                    <color key="backgroundColor" red="0.11372549019607843" green="0.72549019607843135" blue="0.32941176470588235" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="SO0-J7-Cd1"/>
+                        <constraint firstAttribute="width" constant="200" id="WPR-S1-WEg"/>
+                    </constraints>
+                    <state key="normal" title="Connect with Spotify!">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="connectPressed:" destination="-1" eventType="touchUpInside" id="1bf-jZ-nUY"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="qGC-mk-yPg" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="4kY-p4-S98"/>
+                <constraint firstItem="qGC-mk-yPg" firstAttribute="top" secondItem="Nbp-c7-Us1" secondAttribute="bottom" constant="102" id="M1E-3a-SN3"/>
+                <constraint firstItem="Nbp-c7-Us1" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Zsb-bT-V8O"/>
+                <constraint firstItem="Nbp-c7-Us1" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="102" id="fYJ-sk-ZSA"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="105.80357142857143"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Spotify_Icon" width="170" height="170"/>
+    </resources>
+</document>
