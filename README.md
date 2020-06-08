@@ -10,7 +10,7 @@ Uses Spotify's SDK and a Swift Spotify API wrapper forked from <a href="https://
 
 #### Screenshots
 
-<img src="Screenshots/login-screen.png" width="80%"> <img src="Screenshots/main-sceen.png" width="80%" align="right">
+<img src="Screenshots/login-screen.png" width="50%"> <img src="Screenshots/main-sceen.png" width="50%" align="right">
 <img src="Screenshots/main-screen-landscape.PNG" width="80%">
 
 #### Setup
